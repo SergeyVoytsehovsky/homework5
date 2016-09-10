@@ -23,7 +23,6 @@ body {
     padding-right: 10px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .menu a {
@@ -31,6 +30,7 @@ body {
     display: block;
     color: #60b5ed;
     font-size: 14px;
+    font-weight: bold;
     line-height: 36px;
     text-decoration: none;
 }
@@ -42,16 +42,28 @@ body {
 
 .minhas{
     padding-left: 28px;
-    height: 32px;
     display: flex;
     align-items: center;
+    height: 32px;
     border-left: 1px solid #56a2dc;
 }
 
-.minhas p {
-    padding-left: 10px;
+.minhas a {
+    display: block;
+    text-decoration: none;
     color: #fefefe;
     font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.minhas img {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.minhas a:hover {
+    background-color: #4eabda;
 }
 
 .enter {
@@ -61,6 +73,7 @@ body {
     display: flex;
     align-items: center;
     color: #fefefe;
+    font-weight: bold;
     background: -moz-linear-gradient(top, #1e5799 0%, #51b1dc 0%, #207cca 100%, #2e7ac4 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #1e5799 0%,#51b1dc 0%,#207cca 100%,#2e7ac4 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #1e5799 0%,#51b1dc 0%,#207cca 100%,#2e7ac4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -80,7 +93,7 @@ body {
 .form-block {
     margin: auto;
     width: 560px;
-    height: 610px;
+    height: 625px;
     background-color: rgba(0, 0, 0, .6);
 }
 
@@ -102,7 +115,11 @@ body {
 }
 
 form {
-    margin: 25px 0 0 142px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 input{
@@ -114,18 +131,20 @@ input{
     border: none;
     border-bottom: 1px solid #494949;
     font-family: 'Helvetica Neue Regular';
-    color: #fffbfb;
+    color: #ccc;
     font-size: 14px;
+    font-weight: bold;
 }
 
 form input:focus {
+    outline: none;
     background-color: #1b5288;
     border-bottom: 1px solid #6491bc;
-    box-shadow: 0px 0px 5px 1px rgba(100, 145, 188, 1);
+    box-shadow: 0px 0px 3px 2px rgba(100, 145, 188, 1);
 }
 
 input[type=checkbox] {
-    margin: 0;
+    margin-left: -13px;
     width: 15px;
     height: 15px;
     color: #fff;
@@ -140,7 +159,7 @@ span {
 }
 
 input[type=submit] {
-    margin: 20px 0 21px 63px;
+    margin-top: 22px;
     padding-left: 6px;
     width: 150px;
     border: 1px solid #67c6e6;
